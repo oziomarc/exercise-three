@@ -1,0 +1,31 @@
+.page {
+    padding: 50px;
+}
+
+.page h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+.weatherCard h2 {
+    font-size: 48px;
+}
+
+.weatherCard {
+    border: 8px dashed black;
+}
+
+.weatherCard p {
+    font-size: 40px;
+}
+
+.header--wrapper {
+    margin: 30px;
+}
+
+.header--wrapper a {
+    font-size: 40px;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
