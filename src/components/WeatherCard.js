@@ -13,13 +13,13 @@ function WeatherCard ({
     return (
         <div className="weatherCard">
             <h2>{city}</h2>
-            <p>Temperature: {currTemp} F</p>
-            <p>Weather Type: {weatherType}</p>
-            <p>Cloudiness: {cloudy}%</p>
-            <p>Humidity: {humidity}%</p>
-            <p>Wind Speed: {windSpeed} mph</p>
-            <p>High: {highTemp} F</p>
-            <p>Low: {lowTemp} F</p>
+            <p><b>Temperature: </b>{currTemp} F</p>
+            <p><b>Weather Type: </b>{weatherType}</p>
+            <p><b>Cloudiness: </b>{cloudy}%</p>
+            <p><b>Humidity: </b>{humidity}%</p>
+            <p><b>Wind Speed: </b>{windSpeed} mph</p>
+            <p><b>High: </b>{highTemp} F</p>
+            <p><b>Low: </b>{lowTemp} F</p>
         </div>
     )
 }
