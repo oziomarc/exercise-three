@@ -1,11 +1,29 @@
+/* .App {
+    font-size: 16px;
+} */
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
 .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
     padding: 50px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .page h1 {
+    font-family: 'Silkscreen', cursive;
     font-size: 64px;
     text-align: center;
+    margin-bottom: 0px;
+}
+
+.page p {
+    font-size: 24px;
+    margin-bottom: 50px;
 }
 
 .weatherCard h2 {
@@ -14,13 +32,25 @@
     text-align: center;
 }
 
+.weatherCard h3 {
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
 .weatherCard {
-    border: 8px dashed black;
+    /* display: flex;
+    flex-direction: column; */
+    border: 2px dashed black;
     padding: 50px;
+    text-align: center;
+    width: 50%;
 }
 
 .weatherCard p {
     font-size: 40px;
+    margin-top: 30px;
 }
 
 .header--wrapper {
@@ -29,10 +59,42 @@
 }
 
 .header--wrapper a {
+    color: black;
     font-size: 40px;
-    font-style: italic;
     margin: 10px;
     padding: 20px;
-    text-emphasis: ;
+    text-emphasis: none;
     text-decoration: none;
+}
+
+a:hover {
+    color: rgb(29, 85, 134);
+    font-size: 46px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#tempValue {
+    font-size: 120px;
+    font-weight: 900;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.weatherCard--weatherType p {
+    font-size: 55px;
+    /* font-weight: 900; */
+}
+
+.weatherCard--weatherType svg {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.weatherCard--weatherType {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

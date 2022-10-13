@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 
 function WeatherCard ({ 
     humidity,
@@ -12,9 +13,12 @@ function WeatherCard ({
 }) {
     return (
         <div className="weatherCard">
-            <h2>{city}</h2>
-            <p><b>Temperature: </b>{currTemp} F</p>
-            <p><b>Weather Type: </b>{weatherType}</p>
+            <h3>{city}</h3>
+            <p id="tempValue">{currTemp} F</p>
+            <div className="weatherCard--weatherType">
+                <p className="weatherCard--type">{weatherType}</p>
+                <WeatherIcon weatherType={weatherType} />
+            </div>
             <p><b>Cloudiness: </b>{cloudy}%</p>
             <p><b>Humidity: </b>{humidity}%</p>
             <p><b>Wind Speed: </b>{windSpeed} mph</p>

@@ -50,11 +50,12 @@ function Home() {
         };
     }, [weatherData])
 
-    console.log("state value", weatherData)
+    // console.log("state value", weatherData)
 
     return (
         <div className="page">
-            <h1>Weather App</h1>
+            <h1 className="title-text">Better Weather</h1>
+            <p><em>Live, up to date weather data.</em></p>
             <Header/>
             <WeatherCard 
             city={city}
